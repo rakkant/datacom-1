@@ -5,7 +5,7 @@ import time
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-s.bind(('10.2.21.75',12345))
+s.bind(('127.0.0.1',12345))
 s.listen(1)
 regex = re.compile(r'\d+, \d+, \W\r\n$')
 
